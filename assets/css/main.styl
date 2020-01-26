@@ -1,0 +1,112 @@
+//Vars colors
+
+//Vars shadow
+sombra-lado= 1px 3px 6px #000
+sombra-bottom= #333
+sombra-button-topo= 0px 3px 6px rgba(0, 0, 0, 0.16)
+//Fonts
+font-padrao= 'Montserrat', sans-serif
+//Reset
+*
+    box-sizing border-box
+    margin 0
+    padding 0
+    body
+        font-size 100%
+        font-family inherit
+        overflow-x hidden
+        audio, img, iframe, video
+            height auto
+        li
+            list-style-type none
+/*Regras Globais*/
+//display flex
+.menu .container-menu, .row
+    display flex
+    @media(min-width: 48em)
+        flex-direction row
+//Display inline-blockquotes
+audio, .bt, img, iframe, video
+    display inline-block
+//Larguras
+audio, img, iframe, video, .main, .menu
+    width 100%
+//Positions        
+.circulo_topo_amarelo, .circulo_roxo_topo
+    position absolute
+/*Regras locais*/    
+//Buttons
+.bt
+    border-radius 8rem
+    box-shadow sombra-lado
+    border-bottom sombra-bottom
+    color #fff
+    padding .58rem 2rem
+.bt-gradiente-topo
+    border-radius 27px
+    background linear-gradient(#6551e2 0%, #3ec2b9 100%)
+    box-shadow sombra-button-topo
+
+//Main
+.main
+    background-color #eee
+    position relative
+    min-height 100vh
+    width 100%
+//Circulos
+.circulo_roxo_topo
+    right -5rem
+    top 0
+    width 30%
+    @media(min-width: 48em)
+        top -70px
+        width 10%
+.circulo_topo_amarelo
+    left -80px
+    top 4rem
+    width 50%
+    @media(min-width: 48em)
+        left -20rem
+        top 10rem
+        width 38%
+        
+//menu
+.menu
+    padding .68rem 1rem
+    width 100%
+    .container-menu
+        display flex
+        flex-direction row
+        align-items center
+        justify-content center
+        .logo
+            width 16%
+            .brand
+                width 80%
+                @media(min-width: 48em)
+                    width 38%
+            @media(min-width: 48em)
+                width 10%
+        .links
+            li 
+                display inline-block
+                padding 0.45rem 2rem
+                &>a
+                    text-decoration none
+                    color #333
+                    font-family 'Montserrat', sans-serif
+                    font-weight 600
+                    &:hover
+                        text-decoration none
+            @media(min-width: 48em)
+                width 63%
+        @media(min-width: 48em)
+            margin 0 auto
+            width 70%
+        @media(min-width: 48em)
+            padding 30px 1rem
+//Perfil James
+.perfil_james
+    width 90%
+    @media(min-width: 48em)
+        width 50%

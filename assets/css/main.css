@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* body {
+  font-size: 100%;
+  font-family: inherit;
+  overflow-x: hidden;
+}
+* body audio,
+* body img,
+* body iframe,
+* body video {
+  height: auto;
+}
+* body li {
+  list-style-type: none;
+}
+/*Regras Globais*/
+.menu .container-menu,
+.row {
+  display: flex;
+}
+@media (min-width: 48em) {
+  .menu .container-menu,
+  .row {
+    flex-direction: row;
+  }
+}
+audio,
+.bt,
+img,
+iframe,
+video {
+  display: inline-block;
+}
+audio,
+img,
+iframe,
+video,
+.main,
+.menu {
+  width: 100%;
+}
+.circulo_topo_amarelo,
+.circulo_roxo_topo {
+  position: absolute;
+}
+/*Regras locais*/
+.bt {
+  border-radius: 8rem;
+  box-shadow: 1px 3px 6px #000;
+  border-bottom: #333;
+  color: #fff;
+  padding: 0.58rem 2rem;
+}
+.bt-gradiente-topo {
+  border-radius: 27px;
+  background: linear-gradient(#6551e2 0%, #3ec2b9 100%);
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+}
+.main {
+  background-color: #eee;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+.circulo_roxo_topo {
+  right: -5rem;
+  top: 0;
+  width: 30%;
+}
+@media (min-width: 48em) {
+  .circulo_roxo_topo {
+    top: -70px;
+    width: 10%;
+  }
+}
+.circulo_topo_amarelo {
+  left: -80px;
+  top: 4rem;
+  width: 50%;
+}
+@media (min-width: 48em) {
+  .circulo_topo_amarelo {
+    left: -20rem;
+    top: 10rem;
+    width: 38%;
+  }
+}
+.menu {
+  padding: 0.68rem 1rem;
+  width: 100%;
+}
+.menu .container-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu .container-menu .logo {
+  width: 16%;
+}
+.menu .container-menu .logo .brand {
+  width: 80%;
+}
+@media (min-width: 48em) {
+  .menu .container-menu .logo .brand {
+    width: 38%;
+  }
+}
+@media (min-width: 48em) {
+  .menu .container-menu .logo {
+    width: 10%;
+  }
+}
+.menu .container-menu .links li {
+  display: inline-block;
+  padding: 0.45rem 2rem;
+}
+.menu .container-menu .links li>a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.menu .container-menu .links li>a:hover {
+  text-decoration: none;
+}
+@media (min-width: 48em) {
+  .menu .container-menu .links {
+    width: 63%;
+  }
+}
+@media (min-width: 48em) {
+  .menu .container-menu {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+@media (min-width: 48em) {
+  .menu .container-menu {
+    padding: 30px 1rem;
+  }
+}
+.perfil_james {
+  width: 90%;
+}
+@media (min-width: 48em) {
+  .perfil_james {
+    width: 50%;
+  }
+}
